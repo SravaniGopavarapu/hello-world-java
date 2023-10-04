@@ -3,12 +3,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'javac HelloWorld.java'
+                sh 'ls-ltr'
+                sh 'pwd'
             }
         }
         stage('Run') {
             steps {
-                sh 'java HelloWorld'
+                sh 'ls-ltr'
+                sh 'pwd'
             }
         }
     }
