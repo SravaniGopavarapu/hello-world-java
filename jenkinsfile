@@ -3,13 +3,11 @@ pipeline {
     stages {
         stage('compile') {
             steps {
-               echo 'Compiling java code'
-               sh 'javac HelloWorld.java' 
+              sh 'javac HelloWorld.java' 
             }
         }
         stage('run') {
             steps {
-                echo 'Running java code'
                 sh 'java HelloWorld'
             }
         }
