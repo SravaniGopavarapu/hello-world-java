@@ -3,15 +3,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ls-ltr'
-                sh 'pwd'
+                sh '''
+                    pwd
+                '''
             }
         }
-        stage('Run') {
-            steps {
-                sh 'ls-ltr'
-                sh 'pwd'
-            }
-        }
+        
     }
 }
